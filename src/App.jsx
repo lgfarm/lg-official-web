@@ -5,6 +5,7 @@ import AboutUs from './components/AboutUs';
 import Products from './components/Products';
 import OurShops from './components/OurShops';
 import Gallery from './components/Gallery';
+import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Products />
       <OurShops />
       <Gallery />
+      <ContactUs />
       <Footer />
     </div>
   );
