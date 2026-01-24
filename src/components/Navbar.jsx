@@ -37,9 +37,9 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:block">
-                    <button className="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-medium transition-all shadow-lg hover:shadow-primary/30 transform hover:-translate-y-0.5">
+                    <a href="#contact-us" className="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-full font-medium transition-all shadow-lg hover:shadow-primary/30 transform hover:-translate-y-0.5 inline-block">
                         Order Now
-                    </button>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -66,9 +66,9 @@ const Navbar = () => {
                             {item}
                         </a>
                     ))}
-                    <button className="mt-4 bg-primary text-white w-full py-3 rounded-full font-bold shadow-lg">
+                    <a href="#contact-us" onClick={() => setMobileMenuOpen(false)} className="mt-4 bg-primary text-white w-full py-3 rounded-full font-bold shadow-lg text-center">
                         Order Now
-                    </button>
+                    </a>
                 </div>
             )}
         </nav>

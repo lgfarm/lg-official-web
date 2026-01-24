@@ -52,11 +52,11 @@ const Products = () => {
                                 <h4 className="text-lg font-bold text-gray-800 mb-2">{product.name}</h4>
                                 <div className="mt-auto flex items-center justify-between">
                                     <span className="text-xl font-bold text-primary">{product.price}</span>
-                                    <button className="p-2 rounded-full bg-gray-50 text-gray-600 hover:bg-primary hover:text-white transition-colors">
+                                    <a href="#contact-us" className="p-2 rounded-full bg-gray-50 text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                         </svg>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -64,12 +64,12 @@ const Products = () => {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <button className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-primary rounded-full hover:bg-primary-dark shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1">
+                    <a href="#contact-us" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-primary rounded-full hover:bg-primary-dark shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1">
                         View Full Catalog
                         <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

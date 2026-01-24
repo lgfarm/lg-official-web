@@ -62,6 +62,7 @@ const ContactUs = () => {
                                 <div>
                                     <input
                                         type="text"
+                                        required
                                         placeholder="First Name"
                                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder-gray-400 bg-gray-50 focus:bg-white"
                                     />
@@ -78,6 +79,7 @@ const ContactUs = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <input
+                                        required
                                         type="email"
                                         placeholder="Email"
                                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder-gray-400 bg-gray-50 focus:bg-white"
@@ -86,6 +88,7 @@ const ContactUs = () => {
                                 <div>
                                     <input
                                         type="text"
+                                        required
                                         placeholder="Subject"
                                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder-gray-400 bg-gray-50 focus:bg-white"
                                     />
@@ -94,6 +97,7 @@ const ContactUs = () => {
 
                             <div>
                                 <textarea
+                                    required
                                     placeholder="Message"
                                     rows="4"
                                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder-gray-400 bg-gray-50 focus:bg-white resize-none"
