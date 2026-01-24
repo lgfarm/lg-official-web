@@ -17,9 +17,11 @@ const Footer = () => {
                     <div className="md:col-span-3 flex justify-center md:justify-start">
                         <div className="flex flex-col items-center md:items-start">
                             {/* Placeholder for Logo - In a real scenario, use the image */}
-                            <div className="w-32 h-32 bg-white-600 rounded-full flex items-center justify-center text-white font-bold text-3xl mb-4 shadow-lg">
-                                <img src={logo} />
-                            </div>
+                            <a href="#home" className="block transform hover:scale-105 transition-transform duration-300">
+                                <div className="w-32 h-32 bg-white-600 rounded-full flex items-center justify-center text-white font-bold text-3xl mb-4 shadow-lg overflow-hidden">
+                                    <img src={logo} className="w-full h-full object-cover" alt="LG Farm Logo" />
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -33,7 +35,7 @@ const Footer = () => {
 
                         <div>
                             <h4 className="text-primary font-bold text-sm tracking-wider uppercase mb-2">Call Now</h4>
-                            <p className="text-4xl text-gray-400 font-light">+94 (27) 492 4042</p>
+                            <a href="tel:+94274924042" className="text-4xl text-gray-400 font-light hover:text-primary transition-colors">+94 (27) 492 4042</a>
                         </div>
                     </div>
 
@@ -45,13 +47,18 @@ const Footer = () => {
                         </h3>
 
                         <ul className="space-y-4">
-                            {['About Us', 'News & Events', 'Gallery', 'Contact Us'].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="flex items-center text-gray-600 hover:text-primary transition-colors group">
+                            {[
+                                { name: 'About Us', link: '#about-us' },
+                                { name: 'News & Events', link: '#' },
+                                { name: 'Gallery', link: '#gallery' },
+                                { name: 'Contact Us', link: '#contact-us' }
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <a href={item.link} className="flex items-center text-gray-600 hover:text-primary transition-colors group">
                                         <svg className="w-4 h-4 mr-3 text-primary/60 group-hover:text-primary transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                                         </svg>
-                                        {item}
+                                        {item.name}
                                     </a>
                                 </li>
                             ))}
