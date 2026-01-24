@@ -20,7 +20,7 @@ const Navbar = () => {
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-4' : 'bg-transparent py-4'}`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div className="flex items-center gap-2">
-                    <img src={logo} alt="Logo" className="w-12 h-12 object-contain" />
+                    <img src={logo} alt="Logo" className="w-32  h-32  object-contain" />
                 </div>
 
                 {/* Desktop Menu */}
