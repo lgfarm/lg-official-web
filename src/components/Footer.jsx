@@ -2,8 +2,15 @@ import React from 'react';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
+    const footerLinks = [
+        { label: 'About Us', href: '#about-us' },
+        { label: 'Contact Us', href: '#contact-us' },
+        { label: 'Products', href: '#products' },
+        { label: 'Home', href: '#home' }
+    ];
+
     return (
-        <footer className="bg-white border-t border-gray-100">
+        <footer id="contact-us" className="bg-white border-t border-gray-100">
             {/* Top Address Bar */}
             <div className="bg-gray-50 py-4 border-b border-gray-100">
                 <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-2">
@@ -16,11 +23,8 @@ const Footer = () => {
                     {/* Logo Column */}
                     <div className="md:col-span-3 flex justify-center md:justify-start">
                         <div className="flex flex-col items-center md:items-start">
-                            {/* Placeholder for Logo - In a real scenario, use the image */}
-                            <a href="#home" className="block transform hover:scale-105 transition-transform duration-300">
-                                <div className="w-32 h-32 bg-white-600 rounded-full flex items-center justify-center text-white font-bold text-3xl mb-4 shadow-lg overflow-hidden">
-                                    <img src={logo} className="w-full h-full object-cover" alt="LG Farm Logo" />
-                                </div>
+                            <a href="#home" className="w-32 h-32 bg-white-600 rounded-full flex items-center justify-center text-white font-bold text-3xl mb-4 shadow-lg hover:shadow-xl transition-shadow">
+                                <img src={logo} alt="LG Farm Logo" />
                             </a>
                         </div>
                     </div>
@@ -35,7 +39,7 @@ const Footer = () => {
 
                         <div>
                             <h4 className="text-primary font-bold text-sm tracking-wider uppercase mb-2">Call Now</h4>
-                            <a href="tel:+94274924042" className="text-4xl text-gray-400 font-light hover:text-primary transition-colors">+94 (27) 492 4042</a>
+                            <p className="text-4xl text-gray-400 font-light">+94 (27) 492 4042</p>
                         </div>
                     </div>
 
@@ -47,18 +51,13 @@ const Footer = () => {
                         </h3>
 
                         <ul className="space-y-4">
-                            {[
-                                { name: 'About Us', link: '#about-us' },
-                                { name: 'News & Events', link: '#' },
-                                { name: 'Gallery', link: '#gallery' },
-                                { name: 'Contact Us', link: '#contact-us' }
-                            ].map((item) => (
-                                <li key={item.name}>
-                                    <a href={item.link} className="flex items-center text-gray-600 hover:text-primary transition-colors group">
+                            {footerLinks.map((item) => (
+                                <li key={item.href}>
+                                    <a href={item.href} className="flex items-center text-gray-600 hover:text-primary transition-colors group">
                                         <svg className="w-4 h-4 mr-3 text-primary/60 group-hover:text-primary transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                                         </svg>
-                                        {item.name}
+                                        {item.label}
                                     </a>
                                 </li>
                             ))}
@@ -68,8 +67,7 @@ const Footer = () => {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-100 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p>&copy; 2026 LG Farming. All Right Reserved.</p>
-                    <p className="mt-2 md:mt-0">Developed By WordWinIT</p>
+                    <p>&copy; 2020 LG Farming. All Right Reserved.</p>
                 </div>
             </div>
         </footer>

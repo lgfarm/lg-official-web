@@ -3,9 +3,8 @@ import slide1 from '../assets/slides/slide1.jpg';
 import slide2 from '../assets/slides/slide2.jpg';
 import slide3 from '../assets/slides/slide3.jpg';
 import slide4 from '../assets/slides/slide4.jpg';
-import slide5 from '../assets/slides/you cover.jpg';
 
-const slides = [slide1, slide2, slide3, slide4, slide5];
+const slides = [slide1, slide2, slide3, slide4];
 
 const Hero = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,19 +36,14 @@ const Hero = () => {
                 ))}
             </div>
 
-            <div className="container mx-auto px-6 relative z-10 text-white text-center md:text-left">
+            <div className="container pt-16 mx-auto px-6 relative z-10 text-white text-center md:text-left">
                 <div className="max-w-3xl">
-                    <span className="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/50 text-orange-300 text-sm font-semibold mb-6 backdrop-blur-sm animate-fade-in-up">
+                    <span className="inline-block  py-1 px-3 rounded-full bg-primary/20 border border-primary/50 text-orange-300 text-sm font-semibold mb-6 backdrop-blur-sm animate-fade-in-up">
                         A New Way To Invest In Poultry
                     </span>
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                        <span className="inline-block animate-drop-in" style={{ animationDelay: '0.1s' }}>Fresh</span>{' '}
-                        <span className="inline-block animate-drop-in" style={{ animationDelay: '0.2s' }}>Chicken</span> <br />
-                        <span className="text-primary">
-                            <span className="inline-block animate-drop-in" style={{ animationDelay: '0.3s' }}>For</span>{' '}
-                            <span className="inline-block animate-drop-in" style={{ animationDelay: '0.4s' }}>You</span>{' '}
-                            <span className="inline-block animate-drop-in" style={{ animationDelay: '0.5s' }}>Everyday!</span>
-                        </span>
+                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in-up delay-100">
+                        Fresh Chicken <br />
+                        <span className="text-primary">For You Everyday!</span>
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-xl animate-fade-in-up delay-200">
                         Experience the farm-to-table difference with our premium quality poultry.
@@ -57,10 +51,14 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 animate-fade-in-up delay-300">
-                        <a href="#about-us" className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-primary/40 transform hover:-translate-y-1 text-center">
+                        <a 
+                            href="#about-us"
+                            className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-primary/40 transform hover:-translate-y-1 text-center">
                             Read More
                         </a>
-                        <a href="#products" className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-bold text-lg transition-all backdrop-blur-sm text-center">
+                        <a 
+                            href="#products"
+                            className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-bold text-lg transition-all backdrop-blur-sm text-center">
                             View Products
                         </a>
                     </div>
