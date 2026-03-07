@@ -1,24 +1,52 @@
 import React from 'react';
 
 // Importing a subset of product images
-import p1 from '../assets/products/IMG_2281.JPG.jpeg';
-import p2 from '../assets/products/IMG_2282.JPG.jpeg';
-import p3 from '../assets/products/IMG_2283.JPG.jpeg';
-import p4 from '../assets/products/IMG_2300.JPG.jpeg';
-import p5 from '../assets/products/IMG_2302.JPG.jpeg';
-import p6 from '../assets/products/IMG_2305.JPG.jpeg';
-import p7 from '../assets/products/IMG_2336.JPG.jpeg';
-import p8 from '../assets/products/IMG_2366.JPG.jpeg';
+import p1 from '../assets/products/p1.jpg';
+import p2 from '../assets/products/p2.jpg';
+import p3 from '../assets/products/p3.Jpg';
+import p4 from '../assets/products/p4.Jpg';
+import p5 from '../assets/products/p5.Jpg';
+import p6 from '../assets/products/p6.Jpg';
+import p7 from '../assets/products/p7.Jpg';
+import p8 from '../assets/products/p8.Jpg';
+import p9 from '../assets/products/p9.Jpg';
+import p10 from '../assets/products/p10.Jpg';
+import p11 from '../assets/products/p11.Jpg';
+import p12 from '../assets/products/p12.Jpg';
+import p13 from '../assets/products/p13.Jpg';
+import p14 from '../assets/products/p14.Jpg';
+import p15 from '../assets/products/p15.Jpg';
+import p16 from '../assets/products/p16.Jpg'; 
+import p17 from '../assets/products/p17.Jpg';
+import p18 from '../assets/products/p18.Jpg';
+import p19 from '../assets/products/p19.Jpg';
+import p20 from '../assets/products/p20.Jpg';
+import p21 from '../assets/products/p21.Jpg';
+import p22 from '../assets/products/p22.Jpg';
 
 const products = [
-    { id: 1, name: "Fresh Whole Chicken", price: "$15.00", image: p1, category: "Whole Bird" },
-    { id: 2, name: "Premium Cuts", price: "$22.00", image: p2, category: "Cuts" },
-    { id: 3, name: "Farm Fresh Eggs", price: "$8.00", image: p3, category: "Eggs" },
-    { id: 4, name: "Organic Chicken Breast", price: "$18.50", image: p4, category: "Cuts" },
+    { id: 1, name: "Skinless Chicken", price: "$15.00", image: p1, category: "Whole Bird" },
+    { id: 2, name: "Catering Pack(giblet less)", price: "$22.00", image: p2, category: "Cuts" },
+    { id: 3, name: "Chicken Off Cut", price: "$8.00", image: p3, category: "Eggs" },
+    { id: 4, name: "Catering Pack", price: "$18.50", image: p4, category: "Cuts" },
     { id: 5, name: "Seasoned Wings", price: "$12.99", image: p5, category: "Prepared" },
-    { id: 6, name: "Family Pack", price: "$45.00", image: p6, category: "Bundle" },
-    { id: 7, name: "Free Range Chicken", price: "$20.00", image: p7, category: "Whole Bird" },
-    { id: 8, name: "Marinated Drumsticks", price: "$14.50", image: p8, category: "Prepared" },
+    { id: 6, name: "Crispy Thigh Sticks", price: "$45.00", image: p6, category: "Crispy Chicken" },
+    { id: 7, name: "Crispy Sticks", price: "$20.00", image: p7, category: "LG Easy Chicken" },
+    { id: 8, name: "Crispy Drum-Let", price: "$14.50", image: p8, category: "Baby Drumsticks" },
+    { id: 9, name: "LG Easy Chicken", price: "$16.00", image: p9, category: "Cuts" },
+    { id: 10, name: "Breasst Boneless", price: "$15.00", image: p10, category: "Whole Bird" },
+    { id: 11, name: "Chicken Liver", price: "$12.99", image: p11, category: "Prepared" },
+    { id: 12, name: "Skin on Thighs", price: "$14.50", image: p12, category: "Cuts" },
+    { id: 13, name: "Gadjet", price: "$16.00", image: p13, category: "Cuts" },
+    { id: 14, name: "Breasts (skin Less)", price: "$18.50", image: p14, category: "Cuts" },
+    { id: 15, name: "Breasts (Skin On)", price: "$14.00", image: p15, category: "Cuts" },
+    { id: 16, name: "Butter Ball", price: "$12.99", image: p16, category: "Prepared" },
+    { id: 17, name: "Chicken Gizzard", price: "$14.50", image: p17, category: "Cuts" },
+    { id: 18, name: "Winglets", price: "$16.00", image: p18, category: "Cuts" },
+    { id: 19, name: "Pet Food", price: "$18.50", image: p19, category: "Cuts" },
+    { id: 20, name: "Baby Drumsticks", price: "$14.00", image: p20, category: "Cuts" },
+    { id: 21, name: "Catering Pack", price: "$12.99", image: p21, category: "Prepared" },
+    { id: 22, name: "Whole Chicken", price: "$14.50", image: p22, category: "Cuts" }
 ];
 
 const Products = () => {
@@ -45,17 +73,21 @@ const Products = () => {
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
                                 <span className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-700 shadow-sm">
-                                    {product.category}
+                                    {/* {product.category} */}
                                 </span>
                             </div>
                             <div className="p-6 flex-grow flex flex-col">
                                 <h4 className="text-lg font-bold text-gray-800 mb-2">{product.name}</h4>
                                 <div className="mt-auto flex items-center justify-between">
-                                    <span className="text-xl font-bold text-primary">{product.price}</span>
-                                    <a href="#contact-us" className="p-2 rounded-full bg-gray-50 text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    {/* <span className="text-xl font-bold text-primary">{product.price}</span> */}
+                                    <a 
+                                        href="#contact-us"
+                                        className="p-2 rounded-full bg-gray-50 text-gray-600 hover:bg-primary hover:text-white transition-colors"
+                                        aria-label={`Order ${product.name}`}
+                                    >
+                                        {/* <svg xmlns="" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                        </svg>
+                                        </svg> */}
                                     </a>
                                 </div>
                             </div>
@@ -64,7 +96,9 @@ const Products = () => {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <a href="#contact-us" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-primary rounded-full hover:bg-primary-dark shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1">
+                    <a 
+                        href="#contact-us"
+                        className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-primary rounded-full hover:bg-primary-dark shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1">
                         View Full Catalog
                         <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
