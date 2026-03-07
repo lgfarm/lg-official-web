@@ -37,7 +37,7 @@ const Hero = () => {
                 ))}
             </div>
 
-            <div className="container mx-auto px-6 relative z-10 text-white text-center md:text-left">
+            <div className="container mx-auto pt-20 px-6 relative z-10 text-white text-center md:text-left">
                 <div className="max-w-3xl">
                     <span className="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/50 text-orange-300 text-sm font-semibold mb-6 backdrop-blur-sm animate-fade-in-up">
                         A New Way To Invest In Poultry
